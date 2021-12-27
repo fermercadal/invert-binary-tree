@@ -69,12 +69,19 @@
           </li>
         </ul>
       </article>
+      <small
+        >GitHub repo:
+        <a href="https://github.com/fermercadal/invert-binary-tree"
+          >fermercadal/invert-binary-tree</a
+        ></small
+      >
     </main>
 
     <style>
       :root {
         --color-dark: #2b2d42;
         --color-light: #edf2f4;
+        --color-primary: #d90429;
         --color-secondary: #8d99ae;
         --border-line: 2px solid var(--color-dark);
       }
@@ -172,6 +179,15 @@
 
       #invert:checked + article ul {
         flex-direction: row-reverse;
+      }
+
+      small {
+        display: block;
+        margin-top: 60px;
+      }
+
+      small a {
+        color: var(--color-primary);
       }
     </style>
   </body>
